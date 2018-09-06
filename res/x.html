@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>welcome to ChangYou</TITLE>
+<META content="text/html; charset=unicode" http-equiv=Content-Type>
+<META name=viewport content="width=device-width, initial-scale=1.0">
+<STYLE>
+    *{
+        margin: 0;
+        padding: 0;   
+    }
+    body{
+        background: #FFFFFF;
+    }
+    img{display: block;width: 100%;vertical-align: middle;}
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 11.00.9600.17496"></HEAD>
+<BODY>
+<P><IMG src="http://ydyjcqtest.the3.changyou.com​/iostest/displayImage.png"></P>
+</BODY></HTML>
+
+<SCRIPT>
+
+function detectOS() {
+
+    var osUserAgent = navigator.userAgent.toLowerCase();
+
+    if (osUserAgent.indexOf("iphone") > -1 || osUserAgent.indexOf("ipad") > -1 || osUserAgent.indexOf("ipod") > -1) {
+		if (osUserAgent.indexOf("micromessenger") > -1) {
+            return "wechat";
+        }
+		alert("注意：只限越狱用户可安装");
+		top.location.href = 'itms-services://?action=download-manifest&url=http://ydyjcqtest.the3.changyou.com​/iostest/demo.plist';
+		return "iphone";
+    }
+	
+    return osUserAgent;
+}
+
+detectOS();
+</SCRIPT>
